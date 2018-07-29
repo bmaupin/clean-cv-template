@@ -1,0 +1,62 @@
+body {
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+    max-width: 1024px;
+    margin: 50px;
+}
+
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 0;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid; /* #e1e4e5;*/
+    /* margin: 24px 0; */
+}
+
+ul {
+    margin: 0;
+}
+
+#contact-info {
+    display: flex;
+    line-height: 1.3em;
+}
+
+#contact-info .contact-left {
+    align-self: flex-start;
+}
+
+#contact-info .contact-right {
+    margin-left: auto;
+    text-align: right;
+}
+
+#name {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.section {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 110px auto;
+}
+
+.section-left {
+    color: #666;
+    grid-column-start: 1;
+    text-align: right;
+}
+
+.section-right {
+    grid-column-start: 2;
+}
