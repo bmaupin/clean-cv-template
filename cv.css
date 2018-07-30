@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 300;
     max-width: 1024px;
-    margin: 25px;
+    margin: 1.6cm;
 }
 
 a {
@@ -16,16 +16,18 @@ b {
 }
 
 h1, h2, h3 {
-    font-family: 'Roboto', serif;
+    font-family: 'Didact Gothic', serif;
     font-weight: 300;
     margin-bottom: 0;
 }
 
 hr {
-    height: 1px;
     border: 0;
     border-top: 1px solid #aaa;
-    /* margin: 24px 0; */
+}
+
+li {
+    margin-left: -10px;
 }
 
 ul {
@@ -47,7 +49,7 @@ ul {
 }
 
 #name {
-    font-size: 1.5em;
+    font-size: 1.6em;
     text-align: center;
 }
 
@@ -61,7 +63,7 @@ ul {
 
 .section {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 0.5em;
     grid-template-columns: 110px auto;
 }
 
@@ -72,13 +74,25 @@ ul {
 }
 
 .section-line {
-    /* margin-top: 1.5em;
-    height: 2px;
-    background: #aaa; */
-    border-bottom: 10px solid #aaa;
-    margin-bottom: 5px;
+    border-bottom: 3px solid #aaa;
+    height: 1.5em;
+    margin-bottom: auto;
+    margin-top: auto;
 }
 
 .section-right {
     grid-column-start: 2;
+}
+
+@media print {
+    body {
+        font-size: 0.8em;
+    }
+    .section {
+        grid-template-columns: 90px auto;
+    }
+    @page {
+        /* This hides the header and footer added by Chrome when printing (https://stackoverflow.com/a/44748877/399105) */
+        margin: 0;
+    }
 }
