@@ -9,9 +9,9 @@ Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.htm
 
 2. Run build script
 
-```
-./build.sh
-```
+    ```
+    ./build.sh
+    ```
 
 
 ### Preview
@@ -19,7 +19,7 @@ Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.htm
 ![preview](preview.png)
 
 
-### Build preview
+### Create preview image
 
 ```
 pdftoppm cv.pdf preview -singlefile -r 100 -png
