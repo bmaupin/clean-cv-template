@@ -16,11 +16,11 @@ Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.htm
 
 ### Preview
 
-![preview](preview.jpg)
+![preview](preview.png)
 
 
 ### Build preview
 
 ```
-pdftoppm cv.pdf preview -singlefile -r 75 -jpeg
+pdftoppm cv.pdf preview -singlefile -r 100 -png
 ```
