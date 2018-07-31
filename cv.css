@@ -63,8 +63,8 @@ ul {
 
 .section {
     display: grid;
-    grid-gap: 0.5em;
-    grid-template-columns: 110px auto;
+    grid-gap: 0.8em;
+    grid-template-columns: 7em auto;
 }
 
 .section-left {
@@ -87,9 +87,6 @@ ul {
 @media print {
     body {
         font-size: 0.8em;
-    }
-    .section {
-        grid-template-columns: 90px auto;
     }
     @page {
         /* This hides the header and footer added by Chrome when printing (https://stackoverflow.com/a/44748877/399105) */
