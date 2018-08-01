@@ -28,6 +28,20 @@
     ```
 
 
+### Page breaks
+
+If the page breaks at an undesired spot, you can manually insert a page break by adding `<div style="page-break-after: always;"></div>` in between sections, for example:
+
+```html
+<div class="section">
+  <!-- ... -->
+</div>
+<div style="page-break-after: always;"></div>
+<div class="section">
+  <!-- ... -->
+```
+
+
 ### Create preview image
 
 ```

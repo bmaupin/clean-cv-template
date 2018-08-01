@@ -53,6 +53,10 @@ ul {
     text-align: center;
 }
 
+#name h1 {
+    margin-top: 0;
+}
+
 #name .first-name {
     font-weight: 200;
 }
@@ -82,14 +86,17 @@ ul {
 
 .section-right {
     grid-column-start: 2;
+    /* This doesn't currently work but in theory it should some day (https://bugs.chromium.org/p/chromium/issues/detail?id=719908) */
+    page-break-inside: avoid;
 }
 
 @media print {
     body {
         font-size: 0.8em;
+        /* Use page margin (below) instead when printing as it works per page */
+        margin: 0;
     }
     @page {
-        /* This hides the header and footer added by Chrome when printing (https://stackoverflow.com/a/44748877/399105) */
-        margin: 0;
+        margin: 1.6cm;
     }
 }
