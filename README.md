@@ -1,6 +1,7 @@
-Clean CV template inspired by [moderncv](https://github.com/xdanaux/moderncv)
+![preview](preview.png)
 
-Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.html)
+- Inspired by [moderncv](https://github.com/xdanaux/moderncv)
+- Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.html)
 
 
 ### Instructions
@@ -25,11 +26,6 @@ Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.htm
     ```
     node .
     ```
-
-
-### Preview
-
-![preview](preview.png)
 
 
 ### Create preview image
