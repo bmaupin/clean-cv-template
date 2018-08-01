@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "puppeteer": "^1.6.1"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "build.js",
+  "scripts": {
+    "start": "node ."
+  }
+}

@@ -5,12 +5,25 @@ Filler text from [Anguish Languish](https://www.crockford.com/wrrrld/anguish.htm
 
 ### Instructions
 
-1. Modify cv.html as desired
+1. Install [Node.js](https://nodejs.org)
 
-2. Run build script
+2. Install prerequisites for build script
 
     ```
-    ./build.sh
+    npm install
+    ```
+
+3. Modify cv.html as desired
+
+4. Run build script
+
+    ```
+    npm start
+    ```
+
+    Or:
+    ```
+    node .
     ```
 
 
