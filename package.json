@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "puppeteer": "^1.6.1"
+    "puppeteer": "^1.7.0"
   },
   "engines": {
     "node": ">=8"
