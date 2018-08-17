@@ -98,6 +98,6 @@ ul {
     @page {
         size: letter;
         /* There seems to be a bug with Chromium/puppeteer which inserts extra space when defining a bottom margin (https://github.com/GoogleChrome/puppeteer/issues/2592) */
-        margin: 1.6cm 1.6cm 0;
+        margin: 1.6cm 1.6cm -1.6cm;
     }
 }
