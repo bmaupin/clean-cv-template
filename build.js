@@ -17,7 +17,7 @@ async function printToPdf(browser, inputUrl) {
 
   await page.goto(inputUrl);
   // Waiting allows time for the remote fonts to load
-  await timeout(1000);
+  await timeout(1500);
   await page.pdf({path: outputFilename});
 }
 
