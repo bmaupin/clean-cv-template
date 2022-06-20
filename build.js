@@ -18,7 +18,11 @@ async function printToPdf(browser, inputUrl) {
   await page.goto(inputUrl);
   // Waiting allows time for the remote fonts to load
   await timeout(1500);
-  await page.pdf({path: outputFilename});
+  await page.pdf({
+    path: outputFilename,
+    // Print background images, used for horizontal lines before section titles
+    printBackground: true
+  });
 }
 
 async function printFilesToPdf(files) {
