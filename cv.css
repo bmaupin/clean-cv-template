@@ -64,24 +64,6 @@ ul {
     font-weight: 700;
 }
 
-.section {
-    display: grid;
-    grid-gap: 0.8em;
-    grid-template-columns: 7em auto;
-}
-
-.section-left {
-    color: #666;
-    grid-column-start: 1;
-    text-align: right;
-}
-
-.section-right {
-    grid-column-start: 2;
-    /* This doesn't currently work but in theory it should some day (https://bugs.chromium.org/p/chromium/issues/detail?id=719908) */
-    page-break-inside: avoid;
-}
-
 .section-title {
     /* These background properties draw a horizontal line to the left of each section title */
     background-image: linear-gradient(#aaa, #aaa);
@@ -90,6 +72,25 @@ ul {
     background-position: left center;
     margin: 0.8em 0;
     padding-left: calc(7em + 0.8em);
+    page-break-after: avoid;
+}
+
+.subsection {
+    display: grid;
+    grid-gap: 0.8em;
+    grid-template-columns: 7em auto;
+    margin-top: 0.8em;
+    page-break-inside: avoid;
+}
+
+.subsection-left {
+    color: #666;
+    grid-column-start: 1;
+    text-align: right;
+}
+
+.subsection-right {
+    grid-column-start: 2;
 }
 
 @media print {

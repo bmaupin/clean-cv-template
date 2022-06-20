@@ -30,14 +30,14 @@
 
 ### Page breaks
 
-If the page breaks at an undesired spot, you can manually insert a page break by adding `<div style="page-break-after: always;"></div>` in between sections, for example:
+Page breaks should not occur in `subsection` elements. If the page breaks at an undesired spot, you can manually insert a page break by adding `<div style="page-break-after: always;"></div>`for example:
 
 ```html
-<div class="section">
+<div class="subsection">
   <!-- ... -->
 </div>
 <div style="page-break-after: always;"></div>
-<div class="section">
+<div class="subsection">
   <!-- ... -->
 ```
 
